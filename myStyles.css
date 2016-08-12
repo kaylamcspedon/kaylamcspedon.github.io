@@ -1,0 +1,41 @@
+
+body{
+	background-color: lightGreen;
+}
+h1 {
+	color: darkGreen;
+	text-align: center;
+}
+#firstp {
+	color: green;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right : 150px;
+	margin-left: 150px;
+}
+#secondp {
+	color: green;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right : 150px;
+	margin-left: 150px;
+}
+#thirdp {
+	color: green;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right : 150px;
+	margin-left: 150px;
+}
+p {
+	padding-top : 10px;
+	padding-right: 30px;
+	padding-bottom: 2px;
+	padding-left: 50px;
+}
+#BROCCOLI {
+	text-align: center;
+}

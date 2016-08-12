@@ -1,1 +1,77 @@
-Hello , world
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> One Vegetable </title>
+		<script>
+		function myFunction(){
+			var picture = document.getElementById("BROCCOLI");
+			if (picture.src.match("broccoli.jpg")) {
+				picture.src = "yellowb.jpg";
+				picture.alt = "yellow broc";
+			} 
+			else if (picture.src.match ("yellowb.jpg")){
+				picture.src = "purplev.jpg";
+				picture.alt = "purple broc";
+			}
+			else {
+				console.log("entered the else")
+				picture.src = "broccoli.jpg";
+				console.log("Switched the broccoli")
+				picture.alt = "orignal broc";
+			}
+		}
+		function mysecondFunction() {
+			var picture = document.getElementById("COOKEDBROCCOLI");
+			if (picture.src.match("boiledb.jpg")) {
+				picture.src = "carrotandb.jpg";
+				picture.alt = "carrot and broccoli";
+			}
+			else if (picture.src.match ("carrotandb.jpg")){
+				picture.src = "cookedb.jpg";
+				picture.alt = "cooked plain broccoli";
+			}
+			else if (picture.src.match ("cookedb.jpg")){
+				picture.src = "potatoandb.jpg";
+				picture.alt = "potato and broccoli";
+			}
+			else if (picture.src.match ("potatoandb.jpg")) {
+				picture.src = "eggb.jpg" ;
+				picture.alt = "egg and broccoli and potato";
+			}
+			else if (picture.src.match ("eggb.jpg")) {
+				picture.src = "cheeseb.jpg";
+				picture.alt = "cheese and broccoli";
+			}
+			else {
+				picture.src = "boiledb.jpg";
+				picture.alt = "boiled broccoli";
+			}
+			}
+		</script>
+		<link rel="stylesheet" href="myStyles.css">
+	</head>
+	<body>
+		<h1>
+		Broccoli
+		</h1>
+		<h4>
+		<p id="firstp">
+		A fancy vegetable that is commonly eaten by healthy individuals , vegans, and vegetarianS. They are a simple green color with a thick stem. They resemble the image of a small tree.
+		Broccoli is literally one of the healthiest foods in the world. Broccoli is so awesome.
+		</p>
+		<p id="secondp">
+		They are extremely beneficial to the consumer, they have nutrients and vitamins packed in them. They can be steamed, stir-fried, and seasoned as well as other ways to cook/serve/eat them.
+		</p>
+		</h4>
+		<img id="BROCCOLI" src = "broccoli.jpg" alt="A simple vegetable" height="300" width="700">
+		<button id="button1" onclick="myFunction()">More (RAW) Broccoli </button>
+		<h4>
+		<p id="thirdp">
+		Broccoli can be cooked in many different ways. They are cooked with seasonings, meat, sauce, gravy, or other forms used to flavor or cook them. They are commonly boiled but can also be steamed, stir fried, or fried with breading.
+		They can also be cooked with foods such as carrots, potatoes, pasta, cheese, butter, or other vegetables and meats. They are also popular to be cooked with an egg on top.
+		</p>
+		</h4>
+		<img id="COOKEDBROCCOLI" src= "boiledb.jpg" alt="A cooked broccoli" height="300" width="500">
+		<button id="secondbutton" onclick="mysecondFunction ()"> Cooked Broccoli! </button>
+	</body>
+</html>
